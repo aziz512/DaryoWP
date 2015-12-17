@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-42LESBU</Machine>
+    <WindowsUser>Aziz</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>43302701-156b-4916-802b-21e4ada95ec9</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\bin\Debug\Daryo.exe">
+      <PackagePath>Daryo.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\packages\HtmlAgilityPack.1.4.9\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch\HtmlAgilityPack.dll">
+      <PackagePath>HtmlAgilityPack.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\Assets\call.png">
+      <PackagePath>Assets\call.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\Assets\email.png">
+      <PackagePath>Assets\email.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\Assets\SMS.png">
+      <PackagePath>Assets\SMS.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\Assets\twitter.png">
+      <PackagePath>Assets\twitter.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\bin\Debug\Daryo.xr.xml">
+      <PackagePath>Daryo.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\bin\Debug\About.xbf">
+      <PackagePath>About.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\bin\Debug\Link.xbf">
+      <PackagePath>Link.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\bin\Debug\ReadNews.xbf">
+      <PackagePath>ReadNews.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\bin\Debug\Search.xbf">
+      <PackagePath>Search.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

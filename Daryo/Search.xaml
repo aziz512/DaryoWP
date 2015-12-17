@@ -1,0 +1,80 @@
+﻿<Page
+    x:Class="Daryo.Search"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Daryo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    RequestedTheme="Light">
+
+    <Grid x:Name="MainGrid">
+        <Button Visibility="Visible"
+                x:Name="LooseFocus"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Right"
+                MinWidth="0"
+                MinHeight="0"
+                BorderThickness="0"/>
+        <TextBlock Text="Qidirish"
+                   FontSize="20"
+                   Margin="10,5,0,0"
+                   FontWeight="SemiBold"
+                   Height="30"
+                   x:Name="Title"                   
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"/>
+        <StackPanel Orientation="Horizontal"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    Margin="120,5,0,0"
+                    Height="30">
+            <TextBlock Text="0"
+                       FontSize="20"
+                       x:Name="Current"/>
+            <TextBlock Text="-"
+                       FontSize="20"/>
+            <TextBlock Text="0"
+                       FontSize="20"
+                       x:Name="Last"/>
+            
+        </StackPanel>
+        <TextBox Margin="10,35,80,0"
+                 x:Name="SearchBox"
+                 KeyDown="SearchBox_KeyDown"
+                 BorderBrush="#094AB2"
+                 BorderThickness="1.5"
+                 Background="Transparent"/>
+        
+        <ScrollViewer Margin="10,100,3,0">
+            <StackPanel x:Name="List">
+
+            </StackPanel>
+        </ScrollViewer>
+        
+        <ProgressRing Height="100"
+                      Width="100"
+                      Foreground="Blue"
+                      IsActive="False"
+                      x:Name="Ring"
+                      Background="Transparent"/>
+
+    </Grid>
+
+    <Page.BottomAppBar>
+        <CommandBar ClosedDisplayMode="Compact"
+                    Background="#094AB2"
+                    RequestedTheme="Dark">
+            <AppBarButton Icon="Back"
+                          x:Name="Back"
+                          Label="orqaga"
+                          Click="Back_Click"/>                        
+            <AppBarButton Icon="Forward"
+                          Label="oldinga"
+                          x:Name="Forward"
+                          Click="Forward_Click"
+                          />
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>

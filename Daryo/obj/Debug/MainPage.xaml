@@ -1,0 +1,108 @@
+﻿<Page
+    x:Class="Daryo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Daryo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    RequestedTheme="Light"    
+    Background="White">
+
+    <Grid>
+        <TextBlock Text="So'nggi yangiliklar"
+                   FontSize="20"
+                   Margin="10,5,0,0"
+                   FontWeight="SemiBold"
+                   Height="30"
+                   x:Name="Title"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"/>
+        <ScrollViewer Margin="10,35,3,0">
+            <StackPanel x:Name="List">
+                <!--<StackPanel Orientation="Vertical"
+                            Margin="0,10,0,0">
+                    <TextBlock FontSize="18"
+                               Text="Yaponiyalik olimlar 3D-printer yordamida Ronalduning 'egizagi'ni yaratdi"
+                               TextWrapping="Wrap"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontSize="15"
+                                   Text="21:44, 09.07.2015"
+                                   Foreground="Cyan"/>
+                        <TextBlock Text="Sport"
+                                   FontSize="15"
+                                   Foreground="Gray"
+                                   Margin="10,0,0,0"/>
+                    </StackPanel>
+                    <Grid Margin="0,3,0,0">
+                        <Image Source="http://s.daryo.uz/wp-content/uploads/2015/07/Ronaldu-420x280-215x193.jpg"
+                               Height="120"
+                               HorizontalAlignment="Left"
+                               Width="130"/>
+                        <TextBlock Margin="135,0,0,0"
+                                   HorizontalAlignment="Left"
+                                   VerticalAlignment="Top"
+                                   Text="Olimlar Ronalduning tanasini aniq o'xshatish uchun 110 ta mikrokameradan foydalandi .."
+                                   TextWrapping="Wrap"
+                                   FontSize="14"/>
+                    </Grid>
+                </StackPanel>-->                
+                
+                
+            </StackPanel>            
+        </ScrollViewer>
+        <ProgressRing Height="100"
+                      Width="100"
+                      Foreground="Blue"
+                      IsActive="False"
+                      x:Name="Ring"
+                      Background="Transparent"/>
+
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar ClosedDisplayMode="Compact"
+                    Background="#094AB2"
+                    RequestedTheme="Dark"
+                    >
+            <AppBarButton x:ConnectionId='1' Icon="Back"
+                          x:Name="Back"
+                          Label="orqaga"
+                                            />
+            <AppBarButton x:ConnectionId='2' Icon="Find"
+                          x:Name="Search"
+                          Label="qidirish"
+                                              />
+            <AppBarButton x:ConnectionId='3' Icon="Refresh" 
+                          Label="yangilash"
+                          x:Name="Refresh"
+                                               />
+            <AppBarButton x:ConnectionId='4' Icon="Forward"
+                          Label="oldinga"
+                          x:Name="Forward"
+                                               
+                          />
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:ConnectionId='5' Label="So'nggi yangiliklar"
+                                                        />
+                <AppBarButton x:ConnectionId='6' Label="Mahalliy"
+                                                        />
+                <AppBarButton x:ConnectionId='7' Label="Dunyo"
+                                                        />
+                <AppBarButton x:ConnectionId='8' Label="Texnologiyalar"
+                                                        />
+                <AppBarButton x:ConnectionId='9' Label="Musiqa va Kino"
+                                                        />
+                <AppBarButton x:ConnectionId='10' Label="Avto"
+                                                        />
+                <AppBarButton x:ConnectionId='11' Label="Sport"
+                                                        />
+                <AppBarButton Label="" />
+                <AppBarButton x:ConnectionId='12' Label="Intenet manzil bo'yicha ochish"
+                                                      />
+                <AppBarButton x:ConnectionId='13' Label="Ilova haqida"
+                                                 />
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
+
