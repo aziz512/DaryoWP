@@ -15,6 +15,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Text.RegularExpressions;
+using Windows.Data.Xml.Dom;
+using Windows.UI.Notifications;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -42,6 +44,34 @@ namespace Daryo
 
         }
 
+
+        private static void UpdateTile(List<HtmlNode> headers)
+        {
+            List<string> newNews = new List<string>();
+            for (int i = 0; i < 5; i++)
+            {
+                newNews.Add(WebUtility.HtmlDecode(headers[i].InnerText));
+            }
+            // create the instance of Tile Updater, which enables you to change the appearance of the calling app's tile
+            var updater = TileUpdateManager.CreateTileUpdaterForApplication();
+
+            // enables the tile to queue up to five notifications
+            updater.EnableNotificationQueue(true);
+
+            updater.Clear();
+
+            // get the XML content of one of the predefined tile templates, so that, you can customize it
+
+            for (int i = 0; i < 5; i++)
+            {
+                XmlDocument tileXml = TileUpdateManager.GetTemplateContent(TileTemplateType.TileSquare150x150Text04);
+                tileXml.GetElementsByTagName("text")[0].InnerText = newNews[i];
+                // Create a new tile notification. 
+                updater.Update(new TileNotification(tileXml));
+            }
+
+        }
+
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             if (Frame.BackStackDepth < 1)
@@ -59,6 +89,7 @@ namespace Daryo
             var statusbar = Windows.UI.ViewManagement.StatusBar.GetForCurrentView(); //getting status bar to change its color
             statusbar.ForegroundColor = Windows.UI.Color.FromArgb(255, 9, 74, 178);
             await statusbar.ShowAsync();
+
         }
 
 
@@ -85,7 +116,13 @@ namespace Daryo
 
 
                 var headers = htmlRoot.Descendants() //getting titles of articles
-                              .Where(x => x.Attributes["class"] != null && x.Attributes["class"].Value == "cat_article_title");
+                              .Where(x => x.Attributes["class"] != null && x.Attributes["class"].Value == "cat_article_title").ToList();
+
+                if (headers.Count > 1)
+                {
+                    UpdateTile(headers); //updating tile with passing news titles
+                }
+
                 foreach (var item in headers)
                 {
                     News news = new News();
@@ -201,7 +238,7 @@ namespace Daryo
                 }
 
             }
-            catch
+            catch (System.Net.WebException)
             {
                 MessageDialog msg = new MessageDialog("Internet o'chiq, yo'ki tizim xatosi");
                 msg.Title = "Xato";

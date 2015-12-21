@@ -54,3 +54,6 @@ C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\bin\Debug\HtmlAg
 C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\bin\Debug\HtmlAgilityPack.pdb
 C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\obj\Debug\Daryo.csproj.GenerateResource.Cache
 C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\obj\Debug\Daryo.csprojResolveAssemblyReference.cache
+C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\bin\Debug\BackgroundTasks.winmd
+C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\bin\Debug\BackgroundTasks.pdb
+C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\bin\Debug\BackgroundTasks.pri

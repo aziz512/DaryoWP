@@ -1,1 +1,2 @@
+C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\BackgroundTasks\BackgroundTasks.csproj;neutral
 C:\Users\Aziz\Documents\Visual Studio 2013\Projects\Daryo\Daryo\Daryo.csproj;neutral

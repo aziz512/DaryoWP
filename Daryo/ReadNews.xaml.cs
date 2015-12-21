@@ -154,7 +154,7 @@ namespace Daryo
                     }
                 }
             }
-            catch
+            catch (System.Net.WebException)
             {
                 MessageDialog msg = new MessageDialog("Internet o'chiq, yo'ki tizim xatosi"); //connection error
                 msg.Title = "Xato";
