@@ -5,6 +5,9 @@ This is a Windows Phone 8.1 (WinRT) app for Daryo.uz.
 It's also published on Windows Store.
 Link to store: http://www.windowsphone.com/en-us/store/app/daryo/0d3edc8c-faf4-4d6a-9dc0-35069240922e
 
+Main app's logic is in files:<br />
+[MainPage.xaml.cs](/Daryo/MainPage.xaml.cs)<br />
+[ReadNews.xaml.cs](/Daryo/ReadNews.xaml.cs)
 
 Libraries used: HtmlAgilityPack
 
