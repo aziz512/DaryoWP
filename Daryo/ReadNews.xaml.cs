@@ -11,6 +11,7 @@ using System;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Text.RegularExpressions;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Phone.UI.Input;
 using Windows.UI.Popups;
@@ -128,9 +129,10 @@ namespace Daryo
 
                     if (i < images.Count)   //checking if image exists for this paragraph
                     {
+                        var imgSource = "http://" + Regex.Match(images[i].Attributes["src"].Value, @"([\-\w]+(\.)*)+((\/)*[\-\w]+(\/)+)*[\-\w]+\.[a-zA-Z]{3}").Value;
                         Image img = new Image()
                         {
-                            Source = new BitmapImage(new Uri(images[i].Attributes["src"].Value)),
+                            Source = new BitmapImage(new Uri(imgSource)),
                             Margin = new Thickness(20, 0, 20, 0),
                             HorizontalAlignment = Windows.UI.Xaml.HorizontalAlignment.Center
                         };
@@ -143,9 +145,10 @@ namespace Daryo
                 {
                     for (int i = images.Count - paragraphs.Count - 1; i < images.Count; i++)
                     {
+                        var imgSource = "http://" + Regex.Match(images[i].Attributes["src"].Value, @"([\-\w]+(\.)*)+((\/)*[\-\w]+(\/)+)*[\-\w]+\.[a-zA-Z]{3}").Value;
                         Image img = new Image()
                         {
-                            Source = new BitmapImage(new Uri(images[i].Attributes["src"].Value)),
+                            Source = new BitmapImage(new Uri(imgSource)),
                             Margin = new Thickness(20, 0, 20, 0),
                             HorizontalAlignment = Windows.UI.Xaml.HorizontalAlignment.Center
                         };

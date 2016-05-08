@@ -195,7 +195,15 @@ namespace Daryo
 
                     Grid imgNtext = new Grid() { Margin = new Thickness(0, 3, 0, 0) };
 
-                    Image img = new Image() { Source = new BitmapImage(new Uri(newsList[q].img)), Height = 120, Width = 130, HorizontalAlignment = Windows.UI.Xaml.HorizontalAlignment.Left, Name = q.ToString() };
+                    var img = new Image() { Visibility = Visibility.Collapsed};
+                    if (!String.IsNullOrWhiteSpace(newsList[q].img))
+                    {
+                        img = new Image() { Source = new BitmapImage(new Uri(newsList[q].img)), Height = 120, Width = 130, HorizontalAlignment = Windows.UI.Xaml.HorizontalAlignment.Left, Name = q.ToString() };
+                    }
+                    else
+                    {
+                        img = new Image() {HorizontalAlignment = Windows.UI.Xaml.HorizontalAlignment.Left, Name = q.ToString(), Visibility = Visibility.Collapsed};
+                    }
 
                     TextBlock text = new TextBlock()
                     {
